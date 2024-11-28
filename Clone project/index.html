@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Logo Section -->
+    <div class="logo">
+      <img src="Pictures/flipkartlogo.svg" alt="Flipkart Logo">
+    </div>
+  
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" placeholder="Search for Products, Brands and More" id="searchInput">
+    </div>
+  
+    <!-- User Options -->
+    <div class="user-options">
+      <!-- Login Button with Dropdown -->
+      <div class="menu">
+        <button class="login-btn">Login ▼</button>
+        <div class="dropdown">
+          <p>New customer? <a href="#">Sign Up</a></p>
+          <ul>
+            <li><a href="#"><span>👤</span> My Profile</a></li>
+            <li><a href="#"><span>⭐</span> Flipkart Plus Zone</a></li>
+            <li><a href="#"><span>📦</span> Orders</a></li>
+            <li><a href="#"><span>❤️</span> Wishlist</a></li>
+            <li><a href="#"><span>🏆</span> Rewards</a></li>
+            <li><a href="#"><span>🎁</span> Gift Cards</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Cart -->
+      <a href="#" class="shopping">
+        <i class="fas fa-cart-shopping" style="color: black;"></i> Cart
+      </a>
+  
+      <!-- Become a Seller -->
+      <a href="#" class="seller">
+        <i class="fas fa-gift" style="color: black;"></i> Become a Seller
+      </a>
+    </div>
+  </nav>
+  <div class="image-show">
+    <div class="image-row">
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+            <p>Grocery</p>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+            <p>Mobiles</p>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="Fashion">
+            <p>Fashion ▼</p>
+            <div class="dropdown-menu">
+              
+                <a href="#">Men's Top Wear</a>
+                <a href="#">Men's Bottom Wear</a>
+                <a href="#">Women Ethnic</a>
+                <a href="#">Men Footwear</a>
+                <a href="#">Women Footwear</a>
+                <a href="#">Watches and Accessories</a>
+                <a href="#">Bags, Suitcases & Luggage</a>
+                <a href="#">Kids</a>
+                <a href="#">Essentials</a>
+                <!-- Nested submenu -->
+                <div class="dropdown-submenu">
+                    
+                    <div class="nested-menu">
+                        
+                        <a href="#">Men's T-Shirts</a>
+                        <a href="#">Men's Casual Shirts</a>
+                        <a href="#">Men's Formal Shirts</a>
+                        <a href="#">Men's Kurtas</a>
+                        <a href="#">Men's Ethnic Sets</a>
+                      
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+            <p>Electronics ▼</p>
+                <div class="dropdown-menu">
+                    <div>
+                        Audio
+                        <div class="dropdown-submenu">
+                            <a href="#">All</a>
+                            <a href="#">Bluetooth Headphones</a>
+                            <a href="#">Wired Headphones</a>
+                            <a href="#">True Wireless Earbuds</a>
+                            <a href="#">Bluetooth Speakers</a>
+                            <a href="#">Soundbars</a>
+                        </div>
+                    </div>
+                    <a href="#">Cameras & Accessories</a>
+                    <a href="#">Computer Peripherals</a>
+                    <a href="#">Gaming</a>
+                    <a href="#">Health & Personal Care</a>
+                    <a href="#">Laptop Accessories</a>
+                    <a href="#">Smart Home</a>
+                </div>
+            
+        </div>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ee162bad964c46ae.png?q=100" alt="Home & Furnitures">
+            <p>Home & Furnitures ▼</p>
+                <div class="dropdown-menu">
+                    <a href="#">Kitchenware</a>
+                    <a href="#">Home Decor</a>
+                    <a href="#">Furniture</a>
+                </div>
+            </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="Appliances">
+            <p>Appliances</p>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="Flight Bookings">
+            <p>Flight Bookings</p>
+        </div>
+        <div class="image-item">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="Beauty, Toys & More">
+            <p>Beauty, Toys & More ▼</p>
+            <div class="dropdown-menu">
+            
+                
+                    <a href="#">Beauty & Personal Care</a>
+                    <div class="nested-menu">
+          
+                        <a href="#">Bath & Oral Care</a>
+                        <a href="#">Personal Hygiene</a>
+                        <a href="#">Eye Makeup</a>
+                        <a href="#">Face Makeup</a>
+                        <a href="#">Lip Makeup</a>
+                        <a href="#">Hair Care</a>
+                        <a href="#">Bath Essentials</a>
+                        <a href="#">Women's Personal Hygiene</a>
+                    </div>
+              
+                <a href="#">Men's Grooming</a>
+                <a href="#">Food & Drinks</a>
+                <a href="#">Nutrition & Health Care</a>
+              
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="Pictures/menuIcon9.webp" alt="Two Wheelers">
+            <p>Two Wheelers▼</p>
+            <div class="dropdown-menu">
+              <a href="#" >Petrol Vehicles</a>
+              <a href="#">Electrical Vehicles</a>
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ul>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="Pictures/img1.webp" alt="Los Angeles">
+          </div>
+          <div class="item">
+            <img src="Pictures/img2.webp" alt="Chicago">
+          </div>
+          <div class="item">
+            <img src="Pictures/img3.webp" alt="New York">
+          </div>
+          <div class="item">
+            <img src="Pictures/img4.webp" alt="New York">
+          </div>
+          <div class="item">
+            <img src="Pictures/img5.webp" alt="New York">
+          </div>
+          <div class="item">
+            <img src="Pictures/img6.webp" alt="New York">
+          </div>
+        </div>
+  
+     <!-- Left and right controls -->
+<a class="left carousel-control custom-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left custom-arrow"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control custom-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right custom-arrow"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="image-gallery">
+    <div class="image-box">
+        <img src="Pictures/img7.jfif" alt="Image 7">
+        <p>Realme</p>
+    </div>
+    <div class="image-box">
+        <img src="Pictures/img8.webp" alt="Image 8">
+        <p>Vivo</p>
+    </div>
+    <div class="image-box">
+        <img src="Pictures/img9.jpg" alt="Image 9">
+        <p>Poco</p>
+    </div>
+    <div class="image-box">
+        <img src="Pictures/img10.webp" alt="Image 10">
+        <p>Motorola</p>
+    </div>
+    <div class="image-box">
+        <img src="Pictures/img11.jfif" alt="Image 11">
+        <p>Realme P1 Pro</p>
+    </div>
+    <div class="image-box">
+        <img src="Pictures/img12.webp" alt="Image 12">
+    </div>
+</div>
+
+
+
+<div class="new-image-gallery">
+    <!-- Title Box -->
+    <div class="gallery-title">
+        <h3>Toys & Instruments</h3>
+    </div>
+
+    <!-- Image Boxes -->
+    <div class="new-image-box">
+        <img src="Pictures/img13.jfif" alt="Image 13">
+        <p>Remote Control Toys</p>
+        <b>Up to 80% off</b>
+    </div>
+    <div class="new-image-box">
+        <img src="Pictures/img14.jfif" alt="Image 14">
+        <p>Geared Cycles</p>
+        <b>Up to 70% off</b>
+    </div>
+    <div class="new-image-box">
+        <img src="Pictures/img15.png" alt="Image 15">
+        <p>Best of Action Toys</p>
+        <b>Up to 70% off</b>
+    </div>
+    <div class="new-image-box">
+        <img src="Pictures/img16.webp" alt="Image 16">
+        <p>Treadmill</p>
+        <b>Up to 70% off</b>
+    </div>
+    <div class="new-image-box">
+        <img src="Pictures/img17.jfif" alt="Image 17">
+        <p>Soft Toys</p>
+        <b>Up to 70% off</b>
+    </div>
+    <div class="new-image-box">
+        <img src="Pictures/img18.jfif" alt="Image 18">
+        <p>String Instruments</p>
+        <b>Up to 70% off</b>
+    </div>
+</div>
+
+
+<div class="horizontal-container">
+    <h2 class="section-heading">Top Stories : Brand Directory</h2>
+    <div>
+        <p class="size">
+         <h class="search">Most Searched For on Flipkart:</h>  iPhone 16 | iPhone 16 Plus | iPhone 16 Pro | iPhone 16 Pro Max | Whoop Band | Flipkart Minutes | Flipkart Exchange | Flipkart Reset | Nothing Phone 2a Plus | Sarees | CMF by Nothing Phone 1 | Pocket Bazaar | Xiaomi 14 CIVI | Infinix Note 40 Pro 5G | iPhone 15 | Infinix Note 40 5G | iPhone 15 Plus | vivo X Fold3 Pro | Motorola g04s | Vivo X 100 | OnePlus Nord CE 3 Lite 5G | Spoyl Store | SAMSUNG | SAMSUNG Fold 5 | Flipkart Axis Bank Super Elite Credit Card | 5G Mobile Phones | Primebook Laptops | Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+        </p>
+    </div>
+
+    <div>
+        
+        <p class="size">
+         <h class="search">MOBILES</h> OPPO Reno 12 | Motorola Edge 50 Fusion | REDMI 12 5G | REDMI Note 13 5G | Realme 12+ 5G | POCO C65 | Motorola G84 | Realme C53 | Infinix Smart 8 | Samsung Galaxy S23 5G | Samsung Galaxy S21 FE 5G Qualcomm | vivo V30 | Samsung Galaxy S24 5G | Samsung Galaxy S24+5G | iPhone 12 64GB | iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G | Infinix HOT 30i | Realme 10 Pro 5G | MOTOROLA G62 5G | Nothing Phone | REDMI Note 12 Pro 5G | Infinix SMART 7 | Vivo Y12 | Oppo A12 | Motorola 5g Phone | Realme 5g Smartphone | Apple 5g Phone | Iqoo 5g Phones | Oneplus 5g Phones | Vivo 5g Phones | Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 | Samsung A31 | 4G Mobile | Nokia Mobile | Samsung Mobile | iphone | Oppo Mobile | Vivo Mobile
+        </p>
+    </div>
+        <div>
+            <p class="size">
+             <h class="search">Camera</h>GoPro Action Camera | Nikon Camera | Canon Camera | Sony Camera | Canon DSLR | Nikon DSLR
+            </p>
+        </div>
+    <div>  
+        <p class="size">
+           <h class="search"> LAPTOPS</h> Asus ROG Ally | MacBook Pro M2 | Premium Laptop | ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen | ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen | ASUS Zenbook 14 OLED (2022) | Realme Book Prime Core i5 11th Gen | Microsoft Surface Go Pentium 128GB | Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops | HP Laptops | Gaming Laptops | 2 in 1 Laptops | Laptops | Dell latest laptops 2022 | HP latest laptops 2022 | Infinix INBook Y1 Plus | SAMSUNG Galaxy Book3 | 12th Gen Intel Core Laptops 
+        </p>
+    </div>
+
+    <div>  
+        <p class="size">
+           <h class="search"> TVS</h> Nokia TV | Panasonic TV | Thomson TV | Mi X Pro | Realme TV | Motorola TV | OnePlus TVs | LG TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon Tv | Mi TV
+        </p>
+    </div>
+
+    <div>
+        
+        <p class="size">
+        <h class="search">Large Appliances:</h>Television | Washing Machines | Refrigerators | Air Conditioners | Electric Cookers | Electric Jug(Heater) / Travel Kettles | Induction Cooktops | Inverters / stabilizer | Irons / Iron Box | Mixer Grinder Juicer | Wet Grinders | Chimneys | Microwave Ovens | Vacuum Cleaners | Water Purifier | Fan
+        </p>
+    </div>
+
+    <div>
+    
+        <p class="size">
+           <h class="search">Clothing:</h> Sarees | Green bridal lehenga | Tops | Apron for Doctors | Shoes | Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | Tshirts | Jeans | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple blouse designs | Banarasi saree blouse designs | Stylish blouse astin design | Track Pant | Blouse neck designs | Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress | Salwar Suits | Kurtis | Designer Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | uppada pattu sarees | Blouse back design | Jodhpur pants
+        </p>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4 >About</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Flipkart Stories</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Corporate Information</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 >Group Companies</h4>
+        <ul>
+          <li><a href="#">Myntra</a></li>
+          <li><a href="#">Cleartrip</a></li>
+          <li><a href="#">Shopsy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 >Help</h4>
+        <ul>
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Cancellation & Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Consumer Policy</h4>
+          <ul>
+            <li><a href="#">Cancellation & Returns</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">EPR Compliance</a></li>
+          </ul>
+        </div>
+      
+        <!-- Vertical line between sections -->
+        <div class="footer-vertical-line"></div>
+      
+        <div class="footer-contact">
+          <h4>Mail Us:</h4>
+          <p>
+            Flipkart Internet Private Limited,<br>
+            Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br>
+            Outer Ring Road, Devarabeesanahalli Village,<br>
+            Bengaluru, 560103, Karnataka, India
+          </p>
+      </div>
+      <div class="footer-contact">
+        <h4 >Registered Office Address:</h4>
+        <p>
+          Flipkart Internet Private Limited,<br>
+          Buildings Alyssa,Begonia & 
+          Clove Embassy Tech Village,
+          Outer Ring Road,Devarabeesanahalli Village,
+          Bengaluru,560103,
+          Karnataka,India
+          CIN: U51109KA2012PTC066107<br>
+          Telephone: <span class="phone-number">044-45614700</span> / <span class="phone-number">044-67231500</span>
+        </p>
+      </div>
+    </div>
+    </div>
+</footer>
+<footer class="site-footer">
+  <!-- Footer Navigation Links -->
+  <div class="footer-nav-links">
+      <a href="#">
+          <i class="fas fa-store"></i> Become a Seller
+      </a>
+      <a href="#">
+          <i class="fas fa-bullhorn"></i> Advertise
+      </a>
+      <a href="#">
+          <i class="fas fa-gift"></i> Gift Cards
+      </a>
+      <a href="#">
+          <i class="fas fa-question-circle"></i> Help Center
+      </a>
+  </div>
+
+  <!-- Footer Details Section -->
+  <div class="footer-details">
+      <p>© 2007-2024 Flipkart.com</p>
+      <!-- Payment Methods Section -->
+      <div class="payment-methods">
+          <ul>
+              <li><img src="Pictures/img 19.webp" alt="Visa"></li>
+              <li><img src="Pictures/img 20.png" alt="Mastercard"></li>
+              <li><img src="Pictures/img 21.png" alt="Maestro"></li>
+              <li><img src="Pictures/img 22.jfif" alt="RuPay"></li>
+              <li><img src="Pictures/img 23.png" alt="UPI"></li>
+          </ul>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
